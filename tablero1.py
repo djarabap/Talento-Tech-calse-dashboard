@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-
+"""import matplotlib.pyplot as plt
+import seaborn as sns"""
 
 st.set_page_config(layout='centered', 
                     page_title='Talento Tech',
@@ -43,6 +44,16 @@ with steps[0]:
 #with steps[1]:
     #id st.button('podemos usar botones', type='primary')
 
+"""with steps [1]:
+    df=pd.read_csv("https://raw.githubusercontent.com/diplomado-bigdata-machinelearning-udea/Curso1/master/s03/dataVentas2009.csv")
+    df.Fecha=pd.to_datetime(df.Fecha, format='%d/%m/%Y')
+    df.set_index('Fecha',inplace=True)
+    # st.table(df)
+    varx=st.selectbox('Escoge la variable x', df.columns)
+    #vary=st.selectbox('Escoge la variable y',met_df['Conversiones'])
+    fig, ax = plt.subplots()
+    ax = sns.histplot(data=df, x=varx)
+    st.pyplot(fig)"""
 
 
 
